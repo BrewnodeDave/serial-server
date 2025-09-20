@@ -12,8 +12,8 @@ A Node.js application that listens for messages from USB serial devices.
 
 1. Clone the repository:
 ```bash
-git clone [your-repo-url]
-cd [your-repo-directory]
+git clone git@github.com:BrewnodeDave/serial-server.git
+cd serial-server
 ```
 
 2. Install dependencies:
@@ -29,7 +29,7 @@ Note: Log out and back in for group changes to take effect.
 
 ## Configuration
 
-Edit `serial-server.js` to match your USB device settings:
+Edit `index.js` to match your USB device settings:
 
 ```javascript
 const PORT = '/dev/ttyUSB0';  // Your USB device path
@@ -47,7 +47,7 @@ dmesg | grep tty
 
 Start the server:
 ```bash
-node serial-server.js
+node index.js
 ```
 
 The server will:
@@ -63,8 +63,3 @@ The server will:
 
 Copyright (c) 2025 Brewnode Dave
 
-## Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m
